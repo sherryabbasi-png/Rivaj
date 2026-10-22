@@ -57,7 +57,39 @@ table{font-size:15px}th{font-size:12px}nav button,#nav button{font-size:16px}.bt
 .ur,.ur input,.ur label,.ur legend,.ur button,.ur select,.pf.ur{font-family:'Noto Naskh Arabic','Segoe UI',Tahoma,serif}.ur label{font-size:15px}.ur td,.ur th{text-align:right}
 .br{display:grid;grid-template-columns:3fr 1fr 1.2fr .8fr;gap:6px;margin-bottom:6px;align-items:center}.br input{width:100%}.br b{text-align:right}
 .bl{display:flex;justify-content:space-between;margin:3px 0}.bt{width:100%;border-collapse:collapse;margin:8px 0;font-size:inherit}.bt td,.bt th{border-bottom:1px dashed #999;padding:3px;white-space:normal;text-transform:none;letter-spacing:0;font-size:inherit;color:#000}
-</style><link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet"></head><body>
+
+/* ROYAL BLACK & GOLD theme */
+:root{--bg:#07080b;--card:#0f1116;--ink:#f4efe3;--mut:#a89f8a;--gold:#d4a73c;--nav:#08090c;--line:#2d2718;--bad:#ff7a7a;--ok:#4ade80;--warn:#f5b942;--inp:#0a0b0f;--num:#f1c75b;--sh:0 8px 28px #000a;--g1:#d4a73c26;--g2:#d4a73c1a}
+html[data-theme=light]{--bg:#f6f1e4;--card:#ffffff;--ink:#18140a;--mut:#6a624d;--gold:#9a6f12;--line:#e4d9ba;--bad:#b42318;--ok:#15803d;--warn:#a15c00;--inp:#ffffff;--num:#7a5608;--sh:0 6px 20px #6b4e0d18;--g1:#d4a73c22;--g2:#d4a73c14}
+html[data-theme=dark]{color-scheme:dark}
+body{background:radial-gradient(760px 420px at 100% 0,var(--g1),transparent 62%),radial-gradient(640px 420px at 0 100%,var(--g2),transparent 62%),var(--bg);background-attachment:fixed;color:var(--ink)}
+.box,.c,.mg,.fc,.lb,.sb{background:var(--card);border-color:var(--line);box-shadow:var(--sh)}
+aside{background:linear-gradient(180deg,#0b0b0e,#050506);border-right:1px solid #3a3220}
+.sbh .bn,.ln .bn,footer b,.logo{color:#e8c26a}.sbh small{color:#a89f8a}.lg{color:#e8c26a;filter:drop-shadow(0 0 6px #c9972b88);display:block;margin-bottom:4px}
+#nav button{color:#d9d2c0}#nav button:hover{background:#1a1710}
+#nav button.on{background:linear-gradient(135deg,#f3d27a,#c9972b 60%,#a77a1c);color:#1a1200;font-weight:700}
+.btn{background:linear-gradient(135deg,#f3d27a,#c9972b 60%,#a77a1c);color:#1a1200}.btn.g{background:transparent;color:var(--mut);border:1px solid var(--line)}.btn.r{background:#dc2626;color:#fff}
+form input,form select,.sb,.lb input,input,select{background:var(--inp);color:var(--ink);border:1px solid var(--line)}
+input:focus,select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px #d4a73c33}option{background:var(--inp);color:var(--ink)}
+.ck{background:var(--inp)}.ck input{accent-color:var(--gold)}.mg legend{color:var(--num)}.c b{color:var(--num)}.c b.bad{color:var(--bad)}.c b.ok{color:var(--ok)}
+th{color:var(--num)}tr:hover td{background:#d4a73c0f}.bars i{background:linear-gradient(180deg,#f3d27a,#a77a1c)}
+.pl{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700;background:#f5b942;color:#1a1200}.pl.delivered{background:#2563eb;color:#fff}.pl.ready,.pl.readytodeliver{background:#22c55e;color:#04200f}
+.dtop{display:grid;grid-template-columns:1.5fr 1fr;gap:12px;margin-bottom:12px}
+.wb{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--sh);color:var(--num)}.wb .wt{font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:700;color:var(--ink)}.wb em{color:var(--num);font-style:normal}.wb small{color:var(--mut)}
+.clk{margin-left:auto;text-align:center;border:1px solid var(--line);border-radius:12px;padding:8px 12px;color:var(--ink)}.clk small{display:block;font-size:12px}.clk b{font-size:20px}
+.qa{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px;box-shadow:var(--sh)}.qa>b{display:block;margin-bottom:8px}.qa div{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.qa button{background:transparent;border:1px solid var(--line);border-radius:12px;padding:10px 2px;color:var(--ink);font-size:12px;cursor:pointer}.qa button i{display:block;font-style:normal;font-size:22px;margin-bottom:2px}
+.hkg{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:12px 0}
+.hk{--t:#d4a73c;display:flex;gap:14px;align-items:center;padding:16px;border-radius:16px;border:1px solid var(--t);background:linear-gradient(135deg,color-mix(in srgb,var(--t) 22%,transparent),transparent 75%),var(--card);box-shadow:var(--sh)}
+.hk.gr{--t:#22c55e}.hk.bl{--t:#3b82f6}.hk.rd{--t:#ef4444}
+.hk i{width:54px;height:54px;flex:none;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;font-style:normal;background:linear-gradient(135deg,var(--t),color-mix(in srgb,var(--t) 55%,#000))}
+.hk small{display:block;color:var(--mut);font-size:13px}.hk b{font-size:24px;color:var(--ink)}
+@media(max-width:860px){.dtop{grid-template-columns:1fr}}
+.hero{background:radial-gradient(800px 420px at 85% 0,#d4a73c44,transparent 65%),#050506}.hero:after{background:radial-gradient(#d4a73c44,transparent 70%)}
+.fs.alt{background:transparent}footer{border-top:1px solid #3a3220}
+#login{background:radial-gradient(700px 500px at 20% 0,#d4a73c33,transparent 62%),radial-gradient(700px 500px at 100% 100%,#d4a73c22,transparent 62%),#050506}.lb{border-top:3px solid var(--gold);color:var(--ink)}
+@media print{html,body{background:#fff!important}}
+</style><link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet"><script>try{document.documentElement.dataset.theme=localStorage.getItem("rf_theme")||"dark"}catch(e){document.documentElement.dataset.theme="dark"}</script></head><body>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 <noscript><p style="padding:30px;font-family:sans-serif">Is system ke liye JavaScript on hona zaroori hai.</p></noscript>
 <div id="land"><div class="hero"><div class="ln"><b class="bn">RIVAJ FASHION</b><button class="btn s" onclick="showLogin()">Login</button></div>
@@ -77,7 +109,7 @@ table{font-size:15px}th{font-size:12px}nav button,#nav button{font-size:16px}.bt
 <div id="login" hidden><div class="lb"><div class="logo bn">RIVAJ FASHION</div><div class="sub">Fashion · Tailoring Management</div>
 <input id="u" type="email" placeholder="Email" autocomplete="username" autocapitalize="none"><input id="p" type="password" placeholder="Password" autocomplete="current-password">
 <button class="btn" onclick="doLogin()">Login</button><div class="err" id="e"></div><a href="#" onclick="forgot();return false" style="font-size:13px;color:var(--gold);display:block;margin:10px 0 6px">Password bhool gaye?</a><a href="#" onclick="showLand();return false" style="font-size:13px;color:var(--mut)">← Wapis</a></div></div>
-<div id="app" hidden><aside><div class="sbh"><b class="bn"></b><small>Management System</small></div><nav id="nav"></nav><button class="btn s g lo" onclick="logout()">Logout</button></aside><div class="mn"><div class="tb np"><b id="ttl"></b><span class="st" id="st"></span></div><main id="v"></main></div></div>
+<div id="app" hidden><aside><div class="sbh"><svg class="lg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 30l3-17 8 9 4-13 4 13 8-9 3 17z"/><path d="M6 35h28"/></svg><b class="bn"></b><small>Management System</small></div><nav id="nav"></nav><button class="btn s g lo" onclick="logout()">Logout</button></aside><div class="mn"><div class="tb np"><b id="ttl"></b><span style="display:flex;align-items:center;gap:8px"><span class="st" id="st"></span><button class="btn s g" id="thm" onclick="toggleTheme()" aria-label="Light ya Dark theme badlein"></button></span></div><main id="v"></main></div></div>
 <script>
 const CFG={apiKey:'AIzaSyDiJ2hTLaoMU_qWo257RQ29RS1rrV11JmU',authDomain:'rivaj-fashion.firebaseapp.com',projectId:'rivaj-fashion',storageBucket:'rivaj-fashion.firebasestorage.app',messagingSenderId:'788715336039',appId:'1:788715336039:web:1aee501307914ad2c2ffc2'},KEYS=['orders','cash','pay','stock','meas','bills','inv','cfg'];
 let ed=null,S={orders:[],cash:[],pay:[],stock:[],meas:[],bills:[],inv:[],cfg:[]},tab='dash',db=null;
@@ -132,11 +164,15 @@ function showLand(){$('login').hidden=true;$('land').hidden=false}
 function render(){setBrand();const T=TABS.filter(t=>t[0]===tab)[0];$('ttl').textContent=T?T[1]:'';$('nav').innerHTML=TABS.map(t=>`<button class="${t[0]===tab?'on':''}" onclick="go('${t[0]}')">${t[1]}</button>`).join('');
  $('v').innerHTML=(['orders','prod','deliv','cash','stock','ledger','meas','bill','inv'].includes(tab)?'<input class="sb np" placeholder="🔍 Search..." oninput="flt(this.value)">':'')+({dash,orders,prod,deliv,cash,workers,stock,meas,bill,inv,ledger,report,tools})[tab]();if(tab==='bill')bcalc(document.querySelector('#v form'))}
 function flt(v){v=v.toLowerCase();document.querySelectorAll('#v table tr').forEach(r=>{if(!r.querySelector('th'))r.style.display=r.textContent.toLowerCase().includes(v)?'':'none'})}
+const CROWN=`<svg class="lg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 30l3-17 8 9 4-13 4 13 8-9 3 17z"/><path d="M6 35h28"/></svg>`;
+const clk=()=>{const d=new Date();return[d.toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short",year:"numeric"}),d.toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit"})]};
 function dash(){const s=stats(),cd=(l,v,c='')=>`<div class="c"><small>${l}</small><b class="${c}">${v}</b></div>`;
  const mo={};S.orders.forEach(x=>{const m=(x.given||'').slice(0,7);if(m)mo[m]=(mo[m]||0)+n(x.total)});const ks=Object.keys(mo).sort().slice(-6),mx=Math.max(1,...ks.map(k=>mo[k]));
  const soon=S.orders.filter(x=>x.status!=='Delivered'&&days(x.due)!==null&&days(x.due)<=10).sort((a,b)=>a.due>b.due?1:-1);
- return`<h2>Dashboard</h2>${alerts()}<div class="grid">${cd('Total Sales',f(s.sales))}${cd('Advance Collected',f(s.paid),'ok')}${cd('Total Remaining',f(s.rem),'bad')}${cd('Total Expenses',f(s.cex))}${cd('Worker Payments',f(s.wp))}${cd('Net Cash',f(s.net),s.net<0?'bad':'ok')}${cd('Pending Orders',s.pend)}${cd('Late Orders',s.late,s.late?'bad':'')}${cd('Total Customers',s.cust)}${cd('Profit Estimate',f(s.profit))}${cd('Low Stock Items',s.low,s.low?'bad':'')}</div>
+ const c2=clk(),hk=(l,v,i,c='')=>`<div class="hk ${c}"><i>${i}</i><div><small>${l}</small><b>${v}</b></div></div>`,rec=S.orders.slice(-5).reverse();
+ return`<div class="dtop"><div class="wb">${CROWN}<div><div class="wt">Welcome Back, <em>${sn()}</em>!</div><small>Shop, orders, workers — sab ek jagah.</small></div><div class="clk"><small id="dt">${c2[0]}</small><b id="tm">${c2[1]}</b></div></div><div class="qa"><b>Quick Actions</b><div><button onclick="go('orders')"><i>🛍</i>Naya Order</button><button onclick="go('meas')"><i>📏</i>Naya Naap</button><button onclick="go('bill')"><i>🧾</i>Billing</button><button onclick="go('inv')"><i>📦</i>Inventory</button></div></div></div>${alerts()}<div class="hkg">${hk('Total Orders',S.orders.length,'🛍')}${hk('Total Amount',f(s.sales),'💰','gr')}${hk('Advance Received',f(s.paid),'💳','bl')}${hk('Remaining Balance',f(s.rem),'⚖','rd')}</div><div class="grid">${cd('Total Expenses',f(s.cex))}${cd('Worker Payments',f(s.wp))}${cd('Net Cash',f(s.net),s.net<0?'bad':'ok')}${cd('Pending Orders',s.pend)}${cd('Late Orders',s.late,s.late?'bad':'')}${cd('Total Customers',s.cust)}${cd('Profit Estimate',f(s.profit))}${cd('Low Stock Items',s.low,s.low?'bad':'')}</div>
  <div class="grid">${cd('Collection Rate',s.sales?Math.round(s.paid/s.sales*100)+'%':'0%')}${cd('Aaj ka Income',f(S.cash.filter(x=>x.date===td()&&x.type==='Income').reduce((a,x)=>a+n(x.amt),0)),'ok')}${cd('Aaj ka Expense',f(S.cash.filter(x=>x.date===td()&&x.type==='Expense').reduce((a,x)=>a+n(x.amt),0)),'bad')}</div>
+ <div class="box"><b>Recent Orders</b><br><br>${tbl(['Order','Customer','Item','Amount','Advance','Status'],rec.map(x=>`<tr><td>${x.no}</td><td>${x.cust}</td><td>${x.item}</td><td>${f(x.total)}</td><td>${f(x.paid)}</td><td><span class="pl ${String(x.status||'').toLowerCase().replace(/[^a-z]/g,'')}">${x.status||''}</span></td></tr>`))}</div>
  <div class="box"><b>Sab se zyada baqaya (Top Dues)</b><br><br>${tbl(['Customer','Remaining'],topDues().map(x=>`<tr><td>${x[0]}</td><td class="bad">${f(x[1])}</td></tr>`))}</div>
  <div class="box"><b>Monthly Sales</b><br><br><div class="bars">${ks.map(k=>`<div><i style="height:${mo[k]/mx*100}px"></i>${k}<br>${f(mo[k])}</div>`).join('')||'<span style="color:var(--mut)">Orders add karein — chart yahan ayega</span>'}</div></div>
  <div class="box"><b>Next 10 Days Deliveries</b><br><br>${tbl(['Customer','Order','Due','Days','Status'],soon.map(x=>`<tr class="${days(x.due)<0?'late':days(x.due)<=3?'soon':''}"><td>${x.cust}</td><td>${x.no}</td><td>${x.due}</td><td>${days(x.due)}</td><td>${x.status}</td></tr>`))}</div>`}
@@ -229,4 +265,9 @@ return`<h2>📦 Inventory</h2><div class="grid"><div class="c"><small>Kul Pieces
 const esc=v=>String(v||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
 function bk(){try{const t=localStorage.getItem('rf_lastbk');return !t||Date.now()-n(t)>6048e5}catch(e){return false}}
 function savecfg(fm){const d=new FormData(fm);S.cfg=[{name:(d.get('name')||'').trim()||'RIVAJ FASHION',tag:d.get('tag'),phone:d.get('phone'),addr:d.get('addr')}];save('cfg');render();return false}
+function setTheme(m){document.documentElement.dataset.theme=m;try{localStorage.setItem('rf_theme',m)}catch(e){}const b=document.getElementById('thm');if(b)b.textContent=m==='dark'?'☀ Light':'🌙 Dark';const c=document.querySelector('meta[name=theme-color]');if(c)c.content=m==='dark'?'#07080b':'#08090c'}
+function toggleTheme(){setTheme(document.documentElement.dataset.theme==='light'?'dark':'light')}
+function theme(){toggleTheme()}
+setTheme(document.documentElement.dataset.theme||'dark');
+setInterval(()=>{const a=document.getElementById('tm');if(a){const c=clk();document.getElementById('dt').textContent=c[0];a.textContent=c[1]}},1000);
 </script></body></html>
